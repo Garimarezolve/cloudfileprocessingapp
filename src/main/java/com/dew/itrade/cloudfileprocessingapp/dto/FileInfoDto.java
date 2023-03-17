@@ -1,8 +1,10 @@
 package com.dew.itrade.cloudfileprocessingapp.dto;
 
-import jakarta.validation.constraints.NotEmpty;
+
 import lombok.Builder;
 import lombok.Data;
+
+import javax.validation.constraints.NotEmpty;
 
 @Data
 @Builder

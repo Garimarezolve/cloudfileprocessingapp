@@ -1,8 +1,9 @@
 package com.dew.itrade.cloudfileprocessingapp.entity;
 
 
-import jakarta.persistence.*;
 import lombok.*;
+
+import javax.persistence.*;
 
 
 @NoArgsConstructor
