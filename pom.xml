@@ -14,7 +14,7 @@
 	<name>cloudfileprocessingapp</name>
 	<description>cloud file processing app project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 		<spring-cloud-gcp.version>3.4.6</spring-cloud-gcp.version>
 		<spring-cloud.version>2021.0.6</spring-cloud.version>
 	</properties>
@@ -73,6 +73,10 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-function-adapter-gcp</artifactId>
+			</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -87,6 +91,12 @@
 						</exclude>
 					</excludes>
 				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.springframework.cloud</groupId>
+						<artifactId>spring-cloud-function-adapter-gcp</artifactId>
+					</dependency>
+				</dependencies>
 			</plugin>
 		</plugins>
 	</build>
